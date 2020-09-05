@@ -1,25 +1,25 @@
 <template>
-    <div class="row">
+    <v-row>
 
         <sidebar></sidebar>
 
-        <div class="col-lg-9 mt-4">
-            <div class="row">
-                <div v-for="product in products" class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" :src="product.photo" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">{{ product.name }}</a>
-                            </h4>
-                            <h5>${{ product.price }}</h5>
-                            <p class="card-text">{{ product.description }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <v-col md="9" class="mt-3 mb-3">
+            <v-row>
+                <v-col v-for="product in products" :key="product.id" lg="4" md="6" class="mb-4">
+                    <v-card class="h-100">
+                        <a href="#"><v-img :src="product.photo" alt=""/></a>
+                        <v-card-title>
+                            <a href="#">{{ product.name }}</a>
+                        </v-card-title>
+                        <v-card-subtitle>
+                            <h3>${{ product.price }}</h3>
+                        </v-card-subtitle>
+                        <v-card-text>{{ product.description }}</v-card-text>
+                    </v-card>
+                </v-col>
+            </v-row>
+        </v-col>
+    </v-row>
     <!-- /.row -->
 
 </template>
