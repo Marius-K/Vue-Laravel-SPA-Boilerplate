@@ -1,11 +1,7 @@
 <template>
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <v-footer color="indigo" app>
+        <span class="white--text">Copyright &copy; Your Website 2020</span>
+    </v-footer>
 </template>
 
 <script>
