@@ -2004,7 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      drawer: false
+      drawer: true
     };
   }
 });
@@ -19730,18 +19730,7 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c(
-        "v-main",
-        [
-          _c(
-            "v-container",
-            { staticClass: "fill-height", attrs: { fluid: "" } },
-            [_c("router-view")],
-            1
-          )
-        ],
-        1
-      ),
+      _c("v-main", [_c("v-container", [_c("router-view")], 1)], 1),
       _vm._v(" "),
       _c("app-footer")
     ],
@@ -19983,15 +19972,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-12 mt-3 mb-3" }, [
+  return _c(
+    "v-row",
+    [
+      _c("v-col", { staticClass: "mt-3 mb-3", attrs: { lg: "12" } }, [
         _c("h1", [_vm._v("About us")]),
         _vm._v(" "),
         _c("p", [
@@ -20000,9 +19984,11 @@ var staticRenderFns = [
           )
         ])
       ])
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -20024,15 +20010,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-12 mt-3 mb-3" }, [
+  return _c(
+    "v-row",
+    [
+      _c("v-col", { staticClass: "mt-3 mb-3", attrs: { lg: "12" } }, [
         _c("h1", [_vm._v("Contact")]),
         _vm._v(" "),
         _c("p", [
@@ -20041,9 +20022,11 @@ var staticRenderFns = [
           )
         ])
       ])
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
